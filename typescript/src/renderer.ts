@@ -1,12 +1,9 @@
-import { newRectangle, Rectangle } from "./shapes/rectangle.js";
-
-function newRenderer(rectangle: Rectangle) {
-    return {
-        draw() {
-            const area: number = rectangle.computeArea()
-            console.log("Shape drawn\n" + "Its area is " + area)
-        }
+class Renderer {
+    draw(shape: Shape): void {
+      const area = shape.computeArea();
+  
+      // assume implementation
+  
+      console.log(`Shape printed\nIts area is ${area}`);
     }
-}
-
-export { newRenderer }
+  }
